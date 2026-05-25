@@ -1,0 +1,270 @@
+
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.background {
+    background: white; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    margin-bottom: 20px; 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px;
+}
+/* NAVIGATION BAR */
+.topnav {
+    background-color: #2e7d32; 
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 80px;
+}
+
+.topnav .logo img {
+    height: 50px;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.logo a:hover {
+    transform: scale(1.05);
+}
+
+.nav {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav a.active {
+    background-color: #1b5e20;
+    font-weight: bold;
+}
+
+/* LEARN MORE BUTTON */
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.learn-more-btn:hover {
+    background-color: #1b5e20;
+}
+
+/* INFO SECTION */
+.infoSolarLeft{
+    background-image: url('images/windmillbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 660px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; 
+}
+
+.infoSolarLeft-content {
+    background-color: rgba(255, 255, 255, 0.758);
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.infoSolarLeft h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.infoSolarLeft p {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+/* CONTENT SECTIONS */
+.solar-content {
+    width: 90%;
+    margin: 20px
+}
+
+.section-title {
+    font-size: 30px;
+    color: #000;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* SOLAR INFO AND CONTENT */
+.solar-item {
+    background: white;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.solar-header-1 {
+    padding: 20px;
+    background: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    color: #000;
+    font-size: 18px;
+}
+
+.solar-header {
+    padding: 20px;
+    background: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    color: #000;
+    font-size: 18px;
+}
+
+.solar-header:hover {
+    background-color: #f1f8e9;
+}
+
+.solar-item .solar-item-content {
+    padding: 20px;
+    display: none; 
+}
+
+.solar-item.active .solar-item-content {
+    display: block; 
+}
+
+/* FEEDBACK PAGE */
+.feedback-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feedback-container h1 {
+    color: #000;
+}
+
+.feedback-container textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.feedback-container button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.feedback-container button:hover {
+    background-color: #1b5e20;
+}
+
+/* TABLE SECTION */
+.table-section {
+    background: white;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section th, .table-section td {
+    color: #333;
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #2e7d32;
+    color: white;
+}
+
+
+/* VIDEO SECTION */
+.video-wrapper {
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.video-wrapper p {
+    margin-bottom: 15px;
+}
+
+/* ANIMATIONS */
+
+.feedback-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
